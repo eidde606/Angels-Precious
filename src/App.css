@@ -37,6 +37,18 @@
   }
 }
 
-button {
+.button {
   font-size: calc(10px + 2vmin);
+}
+
+.cardContainer {
+  display: flex;
+  margin: 5rem 1rem;
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }

@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import "./Card.css";
 
-export default function MultiActionAreaCard() {
+export default function MultiActionAreaCard({ img, title, content }) {
   const clickHandler = () => {
     console.log("Fuck You!!!");
   };
@@ -17,15 +17,15 @@ export default function MultiActionAreaCard() {
           <CardMedia
             component="img"
             height="350"
-            image="https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg"
+            image={img}
             alt="green iguana"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Hair Stylist
+              {title}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              The bitch that does your hair and then charges you a fortune.
+              {content}
             </Typography>
           </CardContent>
         </CardActionArea>
