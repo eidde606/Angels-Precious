@@ -2,14 +2,49 @@ import "./App.css";
 import "./Components/Appbar.jsx";
 import Appbar from "./Components/Appbar.jsx";
 import Card from "./UI/Card.jsx";
-import Card2 from "./UI/Card2.jsx";
+
+const cardData = [
+  {
+    img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
+    title: "Hair Stylist",
+    content: "The bitch that does your hair and then charges you a fortune.",
+  },
+  {
+    img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
+    title: "Hair Stylist",
+    content: "The bitch that does your hair and then charges you a fortune.",
+  },
+  {
+    img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
+    title: "Hair Stylist",
+    content: "The bitch that does your hair and then charges you a fortune.",
+  },
+  {
+    img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
+    title: "Hair Stylist",
+    content: "The bitch that does your hair and then charges you a fortune.",
+  },
+  {
+    img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
+    title: "Hair Stylist",
+    content: "The bitch that does your hair and then charges you a fortune.",
+  },
+  {
+    img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
+    title: "Hair Stylist",
+    content: "The bitch that does your hair and then charges you a fortune.",
+  },
+];
 
 function App() {
   return (
     <div className="App">
       <Appbar />
-      <Card />
-      <Card2 />
+      <div className="cardContainer wrapper">
+        {cardData.map((card) => (
+          <Card {...card} />
+        ))}
+      </div>
     </div>
   );
 }
