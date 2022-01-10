@@ -2,6 +2,9 @@ import "./App.css";
 import "./Components/Appbar.jsx";
 import Appbar from "./Components/Appbar.jsx";
 import Card from "./UI/Card.jsx";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/";
+import About from "./pages/about";
 
 const cardData = [
   {
@@ -39,7 +42,13 @@ const cardData = [
 function App() {
   return (
     <div className="App">
-      <Appbar />
+      <Router>
+        <Appbar />
+        <Routes>
+          <Route path="/" exact elements={<Home />} />
+          <Route path="about" exact elements={<About />} />
+        </Routes>
+      </Router>
       <div className="cardContainer wrapper">
         {cardData.map((card) => (
           <Card {...card} />
