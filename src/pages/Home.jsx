@@ -35,6 +35,16 @@ const Home = () => {
       title: "Hair Stylist",
       content: "The bitch that does your hair and then charges you a fortune.",
     },
+    {
+      img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
+      title: "Hair Stylist",
+      content: "The bitch that does your hair and then charges you a fortune.",
+    },
+    {
+      img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
+      title: "Hair Stylist",
+      content: "The bitch that does your hair and then charges you a fortune.",
+    },
   ];
   return (
     <div className="home-container">

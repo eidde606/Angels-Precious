@@ -1,17 +1,9 @@
 .cardContainer {
   display: flex;
-  margin: 5rem 3rem;
-  justify-content: space-between;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .home-container {
   width: "100%";
-  justify-content: center;
-  align-items: center;
 }

@@ -11,7 +11,7 @@ export default function MultiActionAreaCard({ img, title, content }) {
     console.log("Fuck You!!!");
   };
   return (
-    <div className="cards">
+    <div className="card">
       <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
           <CardMedia

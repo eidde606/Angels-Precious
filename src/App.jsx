@@ -15,16 +15,18 @@ function App() {
   return (
     <div className="App">
       <Appbar />
-      <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/specials" element={<Specials />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/book-online" element={<BookOnline />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/sign-in" element={<SignIn />} />
-      </Routes>
+      <div className="main-container">
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/specials" element={<Specials />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/book-online" element={<BookOnline />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/sign-in" element={<SignIn />} />
+        </Routes>
+      </div>
     </div>
   );
 }
