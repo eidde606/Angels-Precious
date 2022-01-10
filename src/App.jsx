@@ -5,6 +5,11 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Specials from "./pages/Specials";
+import Services from "./pages/Services";
+import BookOnline from "./pages/BookOnline";
+import ContactUs from "./pages/ContactUs";
+import SignIn from "./pages/SignUp";
+import SignUp from "./pages/SignIn";
 
 function App() {
   return (
@@ -14,6 +19,11 @@ function App() {
         <Route path="/" exact element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/specials" element={<Specials />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/book-online" element={<BookOnline />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/sign-in" element={<SignIn />} />
       </Routes>
     </div>
   );

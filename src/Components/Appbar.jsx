@@ -37,7 +37,7 @@ const Appbar = () => {
           </NavLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to="/signin">Sign In</NavBtnLink>
+          <NavBtnLink to="/sign-in">Sign In</NavBtnLink>
         </NavBtn>
       </Nav>
     </>
