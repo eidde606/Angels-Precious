@@ -1,49 +1,31 @@
 import "./App.css";
 import "./Components/Appbar.jsx";
 import Appbar from "./Components/Appbar.jsx";
-import Card from "./UI/Card.jsx";
-
-const cardData = [
-  {
-    img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
-    title: "Hair Stylist",
-    content: "The bitch that does your hair and then charges you a fortune.",
-  },
-  {
-    img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
-    title: "Hair Stylist",
-    content: "The bitch that does your hair and then charges you a fortune.",
-  },
-  {
-    img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
-    title: "Hair Stylist",
-    content: "The bitch that does your hair and then charges you a fortune.",
-  },
-  {
-    img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
-    title: "Hair Stylist",
-    content: "The bitch that does your hair and then charges you a fortune.",
-  },
-  {
-    img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
-    title: "Hair Stylist",
-    content: "The bitch that does your hair and then charges you a fortune.",
-  },
-  {
-    img: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/GettyImages-947995974.jpg",
-    title: "Hair Stylist",
-    content: "The bitch that does your hair and then charges you a fortune.",
-  },
-];
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Specials from "./pages/Specials";
+import Services from "./pages/Services";
+import BookOnline from "./pages/BookOnline";
+import ContactUs from "./pages/ContactUs";
+import SignIn from "./pages/SignUp";
+import SignUp from "./pages/SignIn";
 
 function App() {
   return (
     <div className="App">
       <Appbar />
-      <div className="cardContainer wrapper">
-        {cardData.map((card) => (
-          <Card {...card} />
-        ))}
+      <div className="main-container">
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/specials" element={<Specials />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/book-online" element={<BookOnline />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/sign-in" element={<SignIn />} />
+        </Routes>
       </div>
     </div>
   );
