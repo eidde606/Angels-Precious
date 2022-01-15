@@ -13,7 +13,7 @@ import SignUp from "./pages/SignIn";
 
 function App() {
   return (
-    <div className="App">
+    <div style={{ height: "100%" }}>
       <Appbar />
       <div className="main-container">
         <Routes>

@@ -15,7 +15,7 @@ const Appbar = () => {
         <NavLink to="/">
           <h1>Logo</h1>
         </NavLink>
-        <Bars />
+
         <NavMenu>
           <NavLink to="/about" activeStyle>
             About
