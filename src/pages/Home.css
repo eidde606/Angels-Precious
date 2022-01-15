@@ -1,0 +1,9 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.home-container {
+    width: "100%";
+}
