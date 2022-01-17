@@ -48,10 +48,10 @@ const Home = () => {
   ];
   return (
     <div className="home-container">
-      <h1>Home</h1>
+      <h1 className="title">Home</h1>
       <div className="cardContainer wrapper">
-        {cardData.map((card) => (
-          <Card {...card} />
+        {cardData.map((card, i) => (
+          <Card key={i} {...card} />
         ))}
       </div>
     </div>
