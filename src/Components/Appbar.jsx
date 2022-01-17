@@ -17,22 +17,22 @@ const Appbar = () => {
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to="/about" activeStyle>
+          <NavLink to="/about" activestyle>
             About
           </NavLink>
-          <NavLink to="/specials" activeStyle>
+          <NavLink to="/specials" activestyle>
             Specials
           </NavLink>
-          <NavLink to="/services" activeStyle>
+          <NavLink to="/services" activestyle>
             Services
           </NavLink>
-          <NavLink to="/book-online" activeStyle>
+          <NavLink to="/book-online" activestyle>
             Book Online
           </NavLink>
-          <NavLink to="/contact-us" activeStyle>
+          <NavLink to="/contact-us" activestyle>
             Contact Us
           </NavLink>
-          <NavLink to="/sign-up" activeStyle>
+          <NavLink to="/sign-up" activestyle>
             Sign Up
           </NavLink>
         </NavMenu>

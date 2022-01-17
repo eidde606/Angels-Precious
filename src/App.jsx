@@ -8,8 +8,8 @@ import Specials from "./pages/Specials";
 import Services from "./pages/Services";
 import BookOnline from "./pages/BookOnline";
 import ContactUs from "./pages/ContactUs";
-import SignIn from "./pages/SignUp";
-import SignUp from "./pages/SignIn";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
